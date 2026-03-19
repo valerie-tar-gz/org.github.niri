@@ -1,0 +1,1 @@
+flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak run org.flatpak.Builder --user --install --install-deps-from=flathub --force-clean build-dir org.github.niri.yml

@@ -1,0 +1,13 @@
+diff --git a/meson.build b/meson.build
+index 4012669..a767991 100644
+--- a/meson.build
++++ b/meson.build
+@@ -21,7 +21,7 @@ if dep_hwdata.found()
+ 	hwdata_dir = dep_hwdata.get_variable(pkgconfig: 'pkgdatadir')
+ 	pnp_ids = files(hwdata_dir / 'pnp.ids')
+ else
+-	pnp_ids = files('/usr/share/hwdata/pnp.ids')
++	pnp_ids = files('/app/share/hwdata/pnp.ids')
+ endif
+ 
+ gen_search_table = find_program('tool/gen-search-table.py')
