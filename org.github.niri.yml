@@ -10,8 +10,6 @@ finish-args:
 command: niri
 modules:
 
-modules:
-
   - name: libseat
     buildsystem: meson
     sources:
